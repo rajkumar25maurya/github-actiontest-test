@@ -20,4 +20,14 @@ jobs:
           import platform
           print (platform.processor())
         shell: python   # this command will run in python shell
+  
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Pwershell
+        run:  Get-Location
+      
+      - name: Directory Bash
+        run: pwd
+        shell: bash
         
