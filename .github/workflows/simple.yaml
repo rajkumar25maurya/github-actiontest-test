@@ -14,3 +14,10 @@ jobs:
           node -v
           npm -v
           uname -r
+      
+      - name: python commands
+        run: |
+          import platform
+          print (platform.processor())
+        shell: python   # this command will run in python shell
+        
