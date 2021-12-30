@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: edho "Hello World"
+        run: echo "Hello World"
       
       - name: echo multiline script
         run: |    # It will allow to run multiline command
