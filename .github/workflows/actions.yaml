@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: simple JS Action
         id: greet
-        uses: rajkumar25maurya/html-web@a35b578111c43a11d49429c06149437f2dc88a4   # you can use commit id or branch name or version
+        uses: rajkumar25maurya/html-web@master  # you can use commit id or branch name or version
         with:
           who-to-geet: Raj
       - name: Log Greeting Time
