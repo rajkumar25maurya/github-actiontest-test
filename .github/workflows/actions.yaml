@@ -9,10 +9,10 @@ jobs:
       - name: List Files
         run: | 
           sudo apt-get install git -y
-          git clone https://github.com/rajkumar25maurya/Ipraxa.git
+          #git clone https://github.com/rajkumar25maurya/Ipraxa.git
 
-      #- name: Checkout
-      #  uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580  # it will authenticate you repo and fetch the data on virtual machine
+      - name: Checkout
+        uses: rajkumar25maurya/ipraxa  # it will authenticate you repo and fetch the data on virtual machine
       - name: after checkout List  the Files  
         run: | 
           pwd
