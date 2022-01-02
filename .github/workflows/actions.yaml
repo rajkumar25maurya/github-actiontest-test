@@ -12,7 +12,7 @@ jobs:
           ls
 
       - name: Checkout
-        uses: rajkumar25maurya/ecs@b4fa8d63409c5137ecc45a6f16cdb8af6521d80f # it will authenticate you repo and fetch the data on virtual machine
+        uses: actions/checkout@v1# it will authenticate you repo and fetch the data on virtual machine
       - name: after checkout List  the Files  
         run: | 
           pwd
