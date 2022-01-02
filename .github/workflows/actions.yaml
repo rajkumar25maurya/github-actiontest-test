@@ -20,7 +20,7 @@ jobs:
     
       - name: simple JS Action
         id: Ansh
-        uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580  # you only  use commit id because it never change and your code will not breack
+        uses: rajkumar25maurya/raj-js  # you only  use commit id because it never change and your code will not breack
         with:
           who-to-greet: Raj
       - name: Log Greeting Time
