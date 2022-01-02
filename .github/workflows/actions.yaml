@@ -1,4 +1,4 @@
-name: Actions Workflow.
+name: Actions Workflow
 
 on: [push]
 
@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: simple JS Action
-        id: greet
-        uses: rajkumar25maurya/html-web@master  # you can use commit id or branch name or version
+        id: Ansh
+        uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580  # you only  use commit id because it never change and your code will nopt breack
         with:
           who-to-geet: Raj
       - name: Log Greeting Time
-        run: echo "${{ steps.greet.outputs.time }}"
+        run: echo "${{ steps.Ansh.outputs.time }}"
