@@ -12,7 +12,7 @@ jobs:
           ls
 
       - name: Checkout
-        uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580  # it will authenticate you repo and fetch the data on virtual machine
+        uses: rajkumar25maurya/ecs@master  # it will authenticate you repo and fetch the data on virtual machine
       - name: after checkout List  the Files  
         run: | 
           pwd
@@ -20,7 +20,7 @@ jobs:
     
       - name: simple JS Action
         id: Ansh
-        uses: rajkumar25maurya/ecs@master  # you only  use commit id because it never change and your code will not breack
+        uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580  # you only  use commit id because it never change and your code will not breack
         with:
           who-to-greet: Raj
       - name: Log Greeting Time
