@@ -8,8 +8,13 @@ jobs:
     steps:
       - name: List Files
         run: | 
-          sudo apt-get install git -y
-          #git clone https://github.com/rajkumar25maurya/Ipraxa.git
+         pwd
+         ls
+         echo $GITHUB_SHA
+         echo $GITHUB_REPOSITORY
+         echo $GITHUB_WORKSPACE
+         echo "${{ github.token }}"
+        
 
       - name: Checkout
         uses: Actions/checkout@v2  # it will authenticate you repo and fetch the data on virtual machine
