@@ -16,7 +16,7 @@ jobs:
       - name: after checkout List  the Files  
         run: | 
           pwd
-          ls
+          ls -a
     
       - name: simple JS Action
         id: Ansh
