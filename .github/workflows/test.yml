@@ -1,4 +1,5 @@
 ---
 - hosts: data
   tasks:
-  - name: raj
+  - name: echo test
+    command: echo "raj"
