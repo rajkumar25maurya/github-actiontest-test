@@ -1,0 +1,4 @@
+---
+- hosts: data
+  tasks:
+  - name: raj
