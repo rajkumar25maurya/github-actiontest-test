@@ -2,8 +2,8 @@ name: Actions Workflow
 
 on:
   schedule:
-    - cron: "0/1 * * * *"
-    - cron: "0/3 * * * *"
+    - cron: "0/5 * * * *"
+    - cron: "0/6 * * * *"
   #push:  # push does not have any type of activity
   pull_request:
     types: [ closed, assigned, opened, reopened ]
