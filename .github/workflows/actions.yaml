@@ -6,6 +6,11 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: list the files
+        run: |
+          pwd
+          ls
+          id
       - name: Simple JS acton
         id: Raj
         uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580 
