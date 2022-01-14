@@ -5,6 +5,7 @@ on: [push]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
+    need: ['run-windows-commands']
     steps:
       - name: echo a string
         run: echo "Hello World"
@@ -26,7 +27,7 @@ jobs:
     
   run-windows-commands:
     runs-on: windows-latest
-    needs: ['run-shell-command']
+    #needs: ['run-shell-command']
     steps:
       - name: Directory Powershell
         run: Get-Location
