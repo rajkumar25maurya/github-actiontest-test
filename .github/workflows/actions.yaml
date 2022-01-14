@@ -1,38 +1,15 @@
-name: Actions Workflow
+name: Actions workflow
 
-on:
-  schedule:
-    - cron: "0/5 * * * *"
-  #push:  # push does not have any type of activity
-  pull_request:
-    types: [ closed, assigned, opened, reopened ]
-    
+on: [push]
 
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List Files
-        run: | 
-         pwd
-         ls
-         echo $GITHUB_SHA
-         echo $GITHUB_REPOSITORY
-         echo $GITHUB_WORKSPACE
-         echo "${{ github.token }}"
-        
-
-      - name: Checkout
-        uses: Actions/checkout@v2  # it will authenticate you repo and fetch the data on virtual machine
-      - name: after checkout List  the Files  
-        run: | 
-          pwd
-          ls -a
-    
-      - name: simple JS Action
-        id: Ansh
-        uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580  # you only  use commit id because it never change and your code will not breack
+      - name: Simple JS acton
+        id: Raj
+        uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580 
         with:
-          who-to-greet: Raj
-      - name: Log Greeting Time
-        run: echo "${{ steps.Ansh.outputs.time }}"
+          who-to-greet: Rudal
+      - name: Log creating time
+        run: echo "${{ steps.raj.output.time }}"
