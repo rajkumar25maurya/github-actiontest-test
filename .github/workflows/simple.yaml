@@ -16,3 +16,5 @@ jobs:
           uname -r
           uptime
           df -hT
+          echo $PATH
+ 
