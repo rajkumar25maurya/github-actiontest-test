@@ -12,4 +12,4 @@ jobs:
         with:
           who-to-greet: Rudal
       - name: Log creating time
-        run: echo "${{ steps.raj.output.time }}"
+        run: echo "${{ steps.Raj.output.time }}"
