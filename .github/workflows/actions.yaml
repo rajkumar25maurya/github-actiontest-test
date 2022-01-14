@@ -12,7 +12,7 @@ jobs:
           ls
           id
       - name: Checkout the code
-        uses: rajkumar25maurya/raj-js@master
+        uses: Actions/checkout@v2
       
       - name: after Checkout list all the files
         run: |
