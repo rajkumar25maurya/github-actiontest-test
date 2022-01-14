@@ -11,6 +11,14 @@ jobs:
           pwd
           ls
           id
+      - name: Checkout the code
+        uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580
+      
+      - name: after Checkout list all the files
+        run: |
+          pwd
+          ls
+          
       - name: Simple JS acton
         id: Raj
         uses: rajkumar25maurya/raj-js@5519967b5c0c3a28c8e544679d1cf56e6b9d5580 
