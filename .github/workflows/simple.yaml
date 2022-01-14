@@ -22,5 +22,5 @@ jobs:
         run: |
           import platform
           print(platform.proceor())
-        shell: ptyhon
+        shell: python
  
