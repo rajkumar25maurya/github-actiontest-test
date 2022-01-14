@@ -17,4 +17,10 @@ jobs:
           uptime
           df -hT
           echo $PATH
+      
+      - name: python commands
+        run: |
+          import platform
+          print(platform.proceor())
+        shell: ptyhon
  
