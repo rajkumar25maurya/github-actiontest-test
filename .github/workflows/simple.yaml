@@ -5,7 +5,7 @@ on: [push]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
-    need: ['run-windows-commands']
+    needs: ['run-windows-commands']
     steps:
       - name: echo a string
         run: echo "Hello World"
