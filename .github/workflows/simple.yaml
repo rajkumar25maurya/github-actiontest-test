@@ -24,6 +24,7 @@ jobs:
         run: |
           import platform
           print (platform.processor())
+        shell: python
       # - name: Display the tha in windos os
       #   run: echo %PATH%
       #   shell: cmd
