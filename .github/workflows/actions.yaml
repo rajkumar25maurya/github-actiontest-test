@@ -6,10 +6,16 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+
+      - name: check out the code
+        uses:  Actions/checkout@v2
+
       - name: List file
         run: |
           pwd
-          ls 
+          ls
+          apt-get update -y
+          apt-get install git -y 
 
       - name: simple JS action
         id: Ansh
