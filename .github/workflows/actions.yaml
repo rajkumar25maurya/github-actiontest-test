@@ -13,7 +13,7 @@ jobs:
       - name: List file
         run: |
           pwd
-          ls
+          ls -la
 
       - name: simple JS action
         id: Ansh
