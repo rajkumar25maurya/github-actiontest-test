@@ -11,7 +11,7 @@ jobs:
         uses:  Actions/checkout@v2
         with:
           fetch-depth: 0
-          ref: master
+          ref: develop
 
       - name: List file
         run: |
