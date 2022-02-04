@@ -9,6 +9,8 @@ jobs:
 
       - name: check out the code
         uses:  Actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: List file
         run: |
