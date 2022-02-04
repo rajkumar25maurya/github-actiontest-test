@@ -4,27 +4,31 @@ on: [push]
 
 jobs:
   run-shell-command:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: echo a string
         run: echo "Raj maurya"
       
-      # - name: echo multiline script
-      #   run: |
-      #     node -v
-      #     npm -v
-      #     uname -r
-      #     df -h
+      - name: echo multiline script
+        run: |
+          node -v
+          npm -v
+          uname -r
+          df -h
       
-      # - name: Display the path
-      #   run: echo $PATH
-      #   shell: bash
+      - name: Display the path
+        run: echo $PATH
+        shell: bash
       
-      - name: Display the tha in windos os
-        run: echo %PATH%
-        shell: cmd
+      - name: python commands
+        run: |
+          import platform
+          print (platform.processor())
+      # - name: Display the tha in windos os
+      #   run: echo %PATH%
+      #   shell: cmd
       
-      - name: Display the path using PowerShell core
-        run: echo ${env.PATH}
-        shell: pwsh
+      # - name: Display the path using PowerShell core
+      #   run: echo ${env.PATH}
+      #   shell: pwsh
 
