@@ -14,8 +14,6 @@ jobs:
         run: |
           pwd
           ls
-          sudo apt-get update -y
-          sudo apt-get install git -y 
 
       - name: simple JS action
         id: Ansh
