@@ -10,7 +10,7 @@ jobs:
       - name: check out the code
         uses:  Actions/checkout@v2
         with:
-            fetch-depth: 2
+            fetch-depth: 0
         run: git checkout HEAD^
 
           
