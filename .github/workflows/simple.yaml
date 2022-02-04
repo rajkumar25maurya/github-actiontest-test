@@ -15,3 +15,16 @@ jobs:
           npm -v
           uname -r
           df -h
+      
+      - name: Display the path
+        run: echo $PATH
+        shell: bash
+      
+      - name: Display the tha in windos os
+        run: echo %PATH%
+        shell: cmd
+      
+      - name: Display the path using PowerShell core
+        run: echo ${env.PATH}
+        shell: pwsh
+
