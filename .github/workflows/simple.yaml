@@ -4,21 +4,21 @@ on: [push]
 
 jobs:
   run-shell-command:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: echo a string
         run: echo "Raj maurya"
       
-      - name: echo multiline script
-        run: |
-          node -v
-          npm -v
-          uname -r
-          df -h
+      # - name: echo multiline script
+      #   run: |
+      #     node -v
+      #     npm -v
+      #     uname -r
+      #     df -h
       
-      - name: Display the path
-        run: echo $PATH
-        shell: bash
+      # - name: Display the path
+      #   run: echo $PATH
+      #   shell: bash
       
       - name: Display the tha in windos os
         run: echo %PATH%
