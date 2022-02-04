@@ -11,7 +11,8 @@ jobs:
         uses:  Actions/checkout@v2
         with:
             fetch-depth: 0
-        run: git checkout HEAD^
+            ref: develop
+    
 
           
 
