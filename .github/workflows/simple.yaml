@@ -33,3 +33,12 @@ jobs:
       #   run: echo ${env.PATH}
       #   shell: pwsh
 
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory List in windows PowerShell
+        run: get-location
+      
+      - name: Directory bash
+        run: pwd
+        shell: bash
