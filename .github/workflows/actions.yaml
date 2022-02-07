@@ -1,20 +1,11 @@
 name: Actions workflow
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-
-      - name: check out the code
-        uses:  Actions/checkout@v2
-        with:
-            fetch-depth: 0
-            ref: develop
-    
-
-          
 
       - name: List file
         run: |
@@ -24,6 +15,15 @@ jobs:
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
           echo "${{ github.token }}"
+      
+      - name: Checkout
+        uses: Actions/checkout@v2
+
+      - name: after Checkout list the file
+        run: |
+          pwd
+          ls -la
+
 
       - name: simple JS action
         id: Ansh
