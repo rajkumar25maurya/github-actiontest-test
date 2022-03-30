@@ -36,7 +36,7 @@ jobs:
 
   run-windows-commands:
     runs-on: windows-latest
-    # needs: ['run-shell-command']
+    needs: ['run-shell-command']
     steps:
       - name: Directory List in windows PowerShell
         run: get-location
