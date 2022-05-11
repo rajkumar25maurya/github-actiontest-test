@@ -9,7 +9,7 @@ jobs:
         run: node -v
       - uses: actions/setup-node@v1
         with:
-          node-version: 6
+          node-version: 9
       - name: Log nopde version
         run: node -v
         
