@@ -11,5 +11,9 @@ jobs:
           run: |
             node -v
             cat /etc/os-release
+        
+        - name: FS details
+          run: |
+            df -h
+            hostname
 
-                      
