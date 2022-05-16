@@ -9,7 +9,7 @@ jobs:
       steps:
         - name: Log node version
           run: |
-            node -v
+            nginx -v
             cat /etc/os-release
         
         - name: FS details
