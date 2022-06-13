@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: httpd:latest
-      
+
     steps:
       - name: Log node version
         run: | 
-          nginx -v
+          httpd -v
           cat /etc/os-release
       
       - name: File syste Details
