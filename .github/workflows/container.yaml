@@ -5,7 +5,8 @@ jobs:
   node-docker:
     runs-on: ubuntu-latest
     container:
-      image: nginx:latest
+      image: httpd:latest
+      
     steps:
       - name: Log node version
         run: | 
