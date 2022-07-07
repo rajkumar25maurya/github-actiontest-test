@@ -17,7 +17,7 @@ jobs:
       - name: List the container
         run: docker ps
       - name: Post a User   # it post the user
-        run: 'curl -X POST  http://localhost:3001/api/user -H ''Content-Type: application/json'' -d  ''{\"username\": \"hello\",\"address\": \"pune\"}'''
+        run: 'curl -X POST  http://localhost:3001/api/user -H ''Content-Type: application/json'' -d  ''{"username": "hello","address": "pune"}'''
       
       - name: Get Users
         run: curl http://localhost:3001/api/users
