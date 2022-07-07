@@ -4,17 +4,18 @@ on: push
 jobs:
   node-docker:
     runs-on: ubuntu-latest
-    container:
-      image: httpd:latest
-
+    services:
+      app:
+        image: rajkumar25maurya/docker-nodejs-api_app:v1  ## This docker image is on docker hub
+        ports:
+          - "3001:3000"
+      mongo:
+        image: mongo
+        ports:
+          - "27017:27017"
     steps:
-      - name: Log node version
-        run: | 
-          httpd -v
-          cat /etc/os-release
+      - name: Post a User   # it post the user
+        run: "curl -X POST  http://localhost:3001/api/user -H 'Content-Type: application/json' -d ' {\"username\": \"hello\",\"addres\": \"pune\"}'"
       
-      - name: File syste Details
-        run: |
-          df -hPT
-          hostname
-          uname -r
+      - name: Get Users
+        run: curl http://localhost:3001/api/user
