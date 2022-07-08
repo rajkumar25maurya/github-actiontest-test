@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       app:
-        image: rajkumar25maurya/docker-nodejs-api_app:v1  ### This docker image is on docker hub
+        image: rajkumar25maurya/docker-nodejs-api_app:v1  ## This docker image is on docker hub
         ports:
           - "3001:3000"
       mongo:
