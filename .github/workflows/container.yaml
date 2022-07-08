@@ -21,8 +21,9 @@ jobs:
           args: -v
       - uses: actions/checkout@v1  # It will checkout your code
       
-      - name: Run a Script
+      - name: Change the permission of script file
         run: chmod 755 script.sh
+      - name: Run a Script
         uses: docker://node:12.14.1-alpine3.10
         with:
           entrypoint: ./script.sh
